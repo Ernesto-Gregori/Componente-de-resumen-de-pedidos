@@ -1,0 +1,50 @@
+:root {
+    /** Font **/
+    --fuentePrincipal: 'Red Hat Display', sans-serif;
+
+    /** Primario **/
+    --paleBlue: hsl(225, 100%,94%);
+    --brightBlue: hsl(245, 75%, 52%);
+
+    /** Neutral **/
+    --veryPaleBlue: hsl(225, 100%, 98%);
+    --desaturatedBle: hsl(224, 23%, 55%);
+    --darkBlue: hsl(223, 47%, 23%)
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /*1rem = 10px*/
+}
+
+*, *:before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: var(--fuentePrincipal);
+    font-size: 1.6rem;
+    line-height: 1;
+}
+
+/** Globales **/
+
+a {
+    text-decoration: none;
+}
+
+h2 {
+    font-family: var(--fuentePrincipal);
+    font-size: 2.6rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+/** Utilidades **/
+
+.centrar-texto {
+    text-align: center;
+}
+
