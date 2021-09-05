@@ -25,6 +25,19 @@ body {
     font-family: var(--fuentePrincipal);
     font-size: 1.6rem;
     line-height: 1;
+    
+    background-image: url(../img/pattern-background-mobile.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: var(--paleBlue);
+    opacity: 0.5;
+}
+
+@media (min-width: 375px) {
+    body {
+        background-image: url(../img/pattern-background-desktop.svg);
+    }
+    
 }
 
 /** Globales **/
