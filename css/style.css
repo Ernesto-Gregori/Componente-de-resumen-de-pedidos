@@ -24,13 +24,13 @@ html {
 body {
     font-family: var(--fuentePrincipal);
     font-size: 1.6rem;
-    line-height: 1;
+    line-height: 1.5;
     
     background-image: url(../img/pattern-background-mobile.svg);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center center;
     background-color: var(--paleBlue);
-    opacity: 0.5;
 }
 
 @media (min-width: 375px) {
@@ -41,6 +41,12 @@ body {
 }
 
 /** Globales **/
+
+.contenedor {
+    margin: 0 auto;
+    width: min(90%, 45rem);
+    margin-top: 10.2rem;
+}
 
 a {
     text-decoration: none;
@@ -61,3 +67,39 @@ img {
     text-align: center;
 }
 
+.no-margin {
+    margin: 0;
+}
+
+/* Header */
+
+.header {
+    background-image: url(../img/illustration-hero.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 1rem 1rem 0 0;
+    height: 22rem;
+}
+
+/* Informacion */
+
+.informacion {
+    background-color:  var(--veryPaleBlue);
+    border-radius: 0 0 1rem 1rem;
+    padding-top: 4.5rem;
+}
+
+.informacion--encabezado {
+    color: var(--darkBlue);
+    font-weight: 900;
+}
+.informacion--texto {
+    color: var(--desaturatedBle);
+    padding: 2.5rem;
+}
+@media (min-width: 375px) {
+    .informacion--texto {
+        padding: 2.5rem 8rem;
+    }
+}
