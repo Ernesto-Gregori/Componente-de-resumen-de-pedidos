@@ -64,6 +64,9 @@ h2 {
 img {
     max-width: 100%;
 }
+.boton:hover {
+    cursor: pointer;
+}
 
 /** Utilidades **/
 
@@ -95,7 +98,12 @@ img {
 .informacion {
     background-color:  var(--blanco);
     border-radius: 0 0 2rem 2rem;
-    padding: 4.5rem 0;
+    padding: 3.5rem 0;
+}
+@media (min-width: 768px) {
+    .informacion {
+        padding: 4.5rem 0;
+    }
 }
 
 .informacion--encabezado {
@@ -104,7 +112,7 @@ img {
 }
 .informacion--texto {
     color: var(--desaturatedBlue);
-    padding: 2.5rem 2rem;
+    padding: 2.5rem 5.5rem;
 }
 @media (min-width: 768px) {
     .informacion--texto {
@@ -114,7 +122,7 @@ img {
 
 /* Plan */
 .plan {
-    width: min(90%, 35.4rem);
+    width: min(85%, 35.4rem);
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -157,7 +165,7 @@ img {
     margin-top: 3.2rem;
     font-weight: 700;
     border-radius: 1rem;
-    width: min(90%, 35.4rem);
+    width: min(85%, 35.4rem);
     text-align: center;
     border: none;
 }
