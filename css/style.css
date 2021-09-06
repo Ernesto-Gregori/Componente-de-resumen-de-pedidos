@@ -29,9 +29,9 @@ body {
     line-height: 1.5;
     
     background-image: url(../img/pattern-background-mobile.svg);
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: initial;
     background-color: var(--paleBlue);
 }
 
@@ -137,8 +137,13 @@ img {
 
 }
 .plan__boton {
+    color: var(--brightBlue);
     font-weight: 700;
     text-decoration: underline;
+}
+.plan__boton:hover {
+    text-decoration: none;
+    color: rgb(118, 108, 241);
 }
 
 /*Botones*/
@@ -156,6 +161,9 @@ img {
     text-align: center;
     border: none;
 }
+.boton--compra:hover {
+    background-color: rgb(118, 108, 241);
+}
 
 .boton--cancel {
     display: block;
@@ -163,5 +171,9 @@ img {
     margin-top: 3.6rem;
     font-weight: 700;
     text-align: center;
+}
+.boton--cancel:hover {
+    color: var(--darkBlue);
+    font-weight: 900;
 }
 
