@@ -78,7 +78,7 @@ img {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    border-radius: 1rem 1rem 0 0;
+    border-radius: 2rem 2rem 0 0;
     height: 22rem;
 }
 
@@ -86,7 +86,7 @@ img {
 
 .informacion {
     background-color:  var(--veryPaleBlue);
-    border-radius: 0 0 1rem 1rem;
+    border-radius: 0 0 2rem 2rem;
     padding-top: 4.5rem;
 }
 
@@ -96,10 +96,40 @@ img {
 }
 .informacion--texto {
     color: var(--desaturatedBle);
-    padding: 2.5rem;
+    padding: 2.5rem 2rem;
 }
-@media (min-width: 375px) {
+@media (min-width: 768px) {
     .informacion--texto {
-        padding: 2.5rem 8rem;
+        padding: 2.5rem 7rem;
     }
 }
+
+/* Plan */
+.plan {
+    width: min(90%, 35.4rem);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+    background-color: var(--paleBlue);
+    margin: auto;
+    border-radius: 1rem;
+    padding: 2.5rem 0;
+}
+.plan--opcion{
+    display: flex;
+    gap: 2rem;
+}
+.plan__detalle--texto {
+    color: var(--darkBlue);
+    font-weight: 900;
+}
+.plan__detalle--precio {
+    color: var(--desaturatedBle);
+
+}
+.plan__boton {
+    font-weight: 700;
+    text-decoration: underline;
+}
+
