@@ -9,7 +9,9 @@
     /** Neutral **/
     --veryPaleBlue: hsl(225, 100%, 98%);
     --desaturatedBle: hsl(224, 23%, 55%);
-    --darkBlue: hsl(223, 47%, 23%)
+    --darkBlue: hsl(223, 47%, 23%);
+
+    --blanco: #fff;
 }
 
 html {
@@ -46,10 +48,13 @@ body {
     margin: 0 auto;
     width: min(90%, 45rem);
     margin-top: 10.2rem;
+    margin-bottom: 10.2rem;
+
 }
 
 a {
     text-decoration: none;
+    font-size: 1.4rem;
 }
 
 h2 {
@@ -85,9 +90,9 @@ img {
 /* Informacion */
 
 .informacion {
-    background-color:  var(--veryPaleBlue);
+    background-color:  var(--blanco);
     border-radius: 0 0 2rem 2rem;
-    padding-top: 4.5rem;
+    padding: 4.5rem 0;
 }
 
 .informacion--encabezado {
@@ -111,7 +116,7 @@ img {
     justify-content: space-around;
     align-items: center;
     
-    background-color: var(--paleBlue);
+    background-color: var(--veryPaleBlue);
     margin: auto;
     border-radius: 1rem;
     padding: 2.5rem 0;
@@ -131,5 +136,29 @@ img {
 .plan__boton {
     font-weight: 700;
     text-decoration: underline;
+}
+
+/*Botones*/
+
+.boton--compra {
+    display: block;
+    background-color: var(--brightBlue);
+    color: var(--veryPaleBlue);
+    padding: 1.5rem;
+    margin: auto;
+    margin-top: 3.2rem;
+    font-weight: 700;
+    border-radius: 1rem;
+    width: min(90%, 35.4rem);
+    text-align: center;
+    border: none;
+}
+
+.boton--cancel {
+    display: block;
+    color: var(--desaturatedBle);
+    margin-top: 3.6rem;
+    font-weight: 700;
+    text-align: center;
 }
 
